@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overflow-y: auto;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.473)),
+          url(Theme.png) center / cover;
+      }
+      nav {
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-height: 130px;
+        background-color: rgba(0, 0, 0, 0);
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 0px;
+      }
+      nav img {
+        display: block;
+        height: 100%;
+        width: 17%;
+        padding-left: 30px;
+      }
+      nav h6 {
+        color: rgba(132, 255, 0, 0);
+        font-size: clamp(26px, 1.2vw, 18px);
+      }
+      nav a {
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: rgb(255, 255, 255);
+      }
+      nav a:hover {
+        color: rgba(139, 0, 0, 0.687);
+        filter: drop-shadow(0 0px 40px rgb(255, 255, 255));
+      }
+      nav form {
+        width: auto;
+        height: auto;
+      }
+      form button {
+        background-color: rgba(219, 0, 0, 0.687);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 35px;
+        padding-left: 35px;
+        margin-right: 20px;
+        border-style: groove;
+        border-radius: 30px;
+        border-width: 1px;
+        color: rgb(255, 250, 243);
+        font-size: 17px;
+        box-shadow: inset 0 0px 40px rgba(255, 0, 0, 0);
+        margin-top: 10px;
+      }
+      form button:hover {
+        filter: drop-shadow(0 0px 2px rgba(255, 255, 255, 0.089));
+      }
+      .our {
+        justify-content: center;
+        border-bottom: 1px groove rgb(255, 255, 255);
+        height: auto;
+        width: 100%;
+        box-shadow: 0 0px 50px rgba(255, 255, 255, 0.566);
+        margin-top: 20px;
+      }
+      .our img {
+        width: 100%;
+      }
+      .about {
+        display: flex;
+        width: 100%;
+        height: 280px;
+        margin-top: 60px;
+        justify-content: center;
+        gap: 99px;
+      }
+      .about .card {
+        display: flex;
+        width: 30%;
+        height: 75%;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.041);
+        justify-items: center;
+        box-shadow: 0 0px 18px inset rgba(255, 255, 255, 0);
+      }
+      .fot {
+        width: 100%;
+        height: auto;
+        max-height: 330px;
+        background-color: rgba(138, 138, 138, 0.128);
+      }
+      .fot .im {
+        width: 25%;
+        height: auto;
+        box-shadow: inset 0 0px 10px rgba(255, 255, 255, 0);
+      }
+      .fot .icon {
+        float: right;
+        width: 3.5%;
+        height: auto;
+        margin-top: 5px;
+        margin-right: 8px;
+        transition: 0.3s ease;
+      }
+      .fot .icon:hover {
+        transform: scale(1.1);
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/four-guys.css?v=1">
+<script src="assets/four-guys.js?v=1" defer></script>
+</head>
+  <body class="fg fg-public fg-page-about" data-page="about">
+    <header class="fg-header">
+  <a class="fg-brand" href="home.php" aria-label="Four Guys home"><span class="fg-logo-crop"><img src="the.png" alt="Four Guys" width="190" height="68"></span></a>
+  <button class="fg-menu-toggle" type="button" aria-expanded="false" aria-controls="fg-navigation" aria-label="Open navigation">☰</button>
+  <nav class="fg-navigation" id="fg-navigation" aria-label="Main navigation">
+    <a href="home.php" data-page="home">Home</a><a href="MenuD.php" data-page="menud">Our menu</a><a href="About.html" data-page="about">Our story</a><a href="contact.php" data-page="contact">Contact</a>
+  </nav>
+  <div class="fg-header-actions"><a class="fg-login" href="LoginD.php">Log in</a><a class="fg-cart" href="cart.php" aria-label="Your cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg><span>Your cart</span></a></div>
+</header>
+<main id="main-content"><section class="fg-about-hero"><div><span class="fg-eyebrow">MEET FOUR GUYS</span><h1>Built on fire.<br><em>Made for you.</em></h1><p>We started with a love for authentic American grilling.<br>Today, that same passion goes into every plate.</p><a class="fg-primary" href="MenuD.php">Find your favorite ↗</a></div><img src="S1.png" alt="Our flame-grilled steak" width="800" height="800"></section><section class="fg-section fg-about-story"><span class="fg-eyebrow">OUR STORY</span><h2>Good food brings<br>people together.</h2><p>Four Guys is about passion, fire, and the pleasure of a really good meal. From stacked burgers to smoky grills, we serve bold American flavors right here in Al-Ahsa.</p><div class="fg-values"><article><span>01 /</span><h3>Flavor comes first.</h3><p>Crafting American dishes that satisfy every craving.</p></article><article><span>02 /</span><h3>Your kind of place.</h3><p>A spot for a quick bite, a full table, and everything in between.</p></article><article><span>03 /</span><h3>Always looking ahead.</h3><p>Our ambition: to be Saudi Arabia’s go-to for American grill flavor.</p></article></div></section></main><footer class="fg-footer"><div><a class="fg-brand" href="home.php"><span class="fg-logo-crop"><img src="the.png" alt="Four Guys" width="190" height="68"></span></a><p>Big flavor. Good company.<br>Your next favorite bite is right here.</p></div><div><span class="fg-eyebrow">COME HUNGRY</span><a href="MenuD.php">Explore the menu ↗</a><a href="About.html">Our story</a><a href="contact.php">Find us & get in touch</a></div><div><span class="fg-eyebrow">FOUR GUYS, AL-AHSA</span><p>Aljorn · Saudi Arabia<br>Daily, 10 AM – 12 AM</p><a href="StLogin.php">Staff sign in ↗</a></div><div class="fg-footer-bottom"><span>© Four Guys. All rights reserved.</span><span>Made for your appetite.</span></div></footer>
+</body>
+</html>

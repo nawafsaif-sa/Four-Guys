@@ -1,0 +1,14 @@
+# Local credentials
+Backend/db.local.php
+.env
+.env.*
+!.env.example
+# Editor, backups and runtime files
+.vscode/
+.idea/
+.design-work/
+*.zip
+*.log
+*.bak
+Thumbs.db
+.DS_Store
