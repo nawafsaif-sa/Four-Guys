@@ -1,0 +1,7 @@
+<aside class="fg-sidebar"><a class="fg-brand" href="<?= $fgBase ?>home.php"><span class="fg-logo-crop"><img src="<?= $fgBase ?>the.png" alt="Four Guys" width="190" height="68"></span></a><p class="fg-sidebar-label">YOUR WORKSPACE</p><nav aria-label="Staff navigation">
+<?php $fgRole = $_SESSION['role'] ?? ''; if (in_array($fgRole, ['manager','admin'], true)): ?>
+<a href="<?= $fgBase ?>manager.php">◫ <span>Overview</span></a><a href="<?= $fgBase ?>Backend/orders_list.php">▤ <span>Orders</span></a><a href="<?= $fgBase ?>Backend/manage_menu.php">☷ <span>Menu management</span></a><a href="<?= $fgBase ?>Backend/manage_staff.php">♧ <span>Team</span></a><a href="<?= $fgBase ?>Backend/contact_messages.php">✉ <span>Messages</span></a>
+<?php elseif ($fgRole === 'cashier'): ?><a href="<?= $fgBase ?>cashier.php">▤ <span>Cashier workspace</span></a>
+<?php elseif ($fgRole === 'chef'): ?><a href="<?= $fgBase ?>chef.php">◷ <span>Kitchen orders</span></a>
+<?php elseif ($fgRole === 'waiter'): ?><a href="<?= $fgBase ?>Waiter.php">▤ <span>Tables & orders</span></a><?php endif; ?>
+<a href="<?= $fgBase ?>home.php">↗ <span>View restaurant</span></a></nav><div class="fg-sidebar-bottom"><span class="fg-eyebrow">LET’S MAKE IT A GOOD SHIFT.</span><a href="<?= $fgBase ?>Backend/logout.php">Sign out ↗</a></div></aside>
